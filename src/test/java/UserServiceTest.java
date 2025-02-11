@@ -4,6 +4,7 @@ import jm.task.core.jdbc.service.UserServiceImpl;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.sql.SQLException;
 import java.util.List;
 
 public class UserServiceTest {
@@ -54,6 +55,7 @@ public class UserServiceTest {
             Assert.fail("Во время тестирования сохранения пользователя произошло исключение\n" + e);
         }
     }
+
 
     @Test
     public void removeUserById() {
